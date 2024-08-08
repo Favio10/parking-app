@@ -17,3 +17,7 @@ export const createUser = (req, res) => {
   // Ejemplo:
   res.status(201).json({ message: 'Usuario creado', user: newUser });
 };
+
+export const updateUser = (req, res) => {
+  const { id } = req.params;
+  const updatedData = req.body;
