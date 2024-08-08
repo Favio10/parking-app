@@ -25,3 +25,10 @@ export const updateUser = (req, res) => {
   // Ejemplo:
   res.json({ message: `Usuario con ID: ${id} actualizado`, user: updatedData });
 };
+
+export const deleteUser = (req, res) => {
+  const { id } = req.params;
+  // Aquí deberías eliminar un usuario de la base de datos
+  // Ejemplo:
+  res.json({ message: `Usuario con ID: ${id} eliminado` });
+};
