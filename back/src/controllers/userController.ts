@@ -14,3 +14,6 @@ export const getUser = (req, res) => {
 export const createUser = (req, res) => {
   const newUser = req.body;
   // Aquí deberías crear un nuevo usuario en la base de datos
+  // Ejemplo:
+  res.status(201).json({ message: 'Usuario creado', user: newUser });
+};
