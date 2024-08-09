@@ -23,7 +23,10 @@ export const updateUser = (req, res) => {
   const updatedData = req.body;
   // Aquí deberías actualizar un usuario en la base de datos
   // Ejemplo:
-  res.json({ message: `Usuario con ID: ${id} actualizado`, user: updatedData });
+  res.json({
+    message: `Usuario con ID: ${id} actualizado y verificado`,
+    user: updatedData,
+  });
 };
 
 export const deleteUser = (req, res) => {
